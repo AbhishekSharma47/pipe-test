@@ -5,3 +5,13 @@ trigger:
 pool:
   name: AbhiPOOL
 
+steps:
+- task: TerraformTask@5
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'AbhiSC1'
+    backendAzureRmResourceGroupName: 'ab_bknd'
+    backendAzureRmStorageAccountName: 'abhibknd'
+    backendAzureRmContainerName: 'abhibkndcon'
+    backendAzureRmKey: 'abhi1.tfstate'
