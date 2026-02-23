@@ -11,6 +11,7 @@ steps:
     provider: 'azurerm'
     command: 'init'
     backendServiceArm: 'AbhiSC'
+    backendAzureRmResourceGroupName: 'ab_bknd'
     backendAzureRmStorageAccountName: 'abhibknd'
     backendAzureRmContainerName: 'abhibkndcon'
-    backendAzureRmKey: 'abhipipe1.tfstate'
+    backendAzureRmKey: 'abhi1.tfstate'
